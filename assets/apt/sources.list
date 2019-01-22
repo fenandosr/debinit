@@ -1,0 +1,17 @@
+#  # Debian Buster
+
+#  ## Main Mexico
+
+deb http://ftp.mx.debian.org/debian buster main contrib non-free
+
+deb-src http://ftp.mx.debian.org/debian buster main contrib non-free
+
+#  ## Security
+
+deb http://security.debian.org/ buster/updates main contrib non-free
+
+deb-src http://security.debian.org/ buster/updates main contrib non-free
+
+#  ## Multimedia
+
+deb http://www.deb-multimedia.org buster main non-free
