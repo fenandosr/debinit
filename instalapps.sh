@@ -6,6 +6,7 @@
 
 # Build essential
 sudo apt-get install build-essential
+sudo apt-get install python3-pip
 
 # misc firmware
 sudo apt-get install firmware-misc-nonfree
@@ -24,6 +25,9 @@ sudo apt-get install pulseaudio-equalizer
 
 # GDebi
 sudo apt-get install gdebi
+
+#cmake
+sudo apt-get install cmake
 
 # vim
 sudo apt-get install vim
@@ -58,6 +62,9 @@ sudo apt-get install screenfetch
 # kdeconnect
 sudo apt-get install kdeconnect
 
+# copyq
+sudo apt-get install copyq copyq-plugins
+
 # Pass
 ### ver https://www.passwordstore.org/
 sudo apt-get install pass
@@ -78,8 +85,11 @@ sudo apt-get install r-cran-boot r-cran-class r-cran-cluster r-cran-codetools r-
 # FUNNY!
 sudo apt-get install pspp
 
+# notifications...
+sudo apt-get install libnotify-bin
+
 # Latex
-sudo apt-get install texlive-full
+sudo apt-get install texlive-base
 
 # Texmaker
 sudo apt-get install texmaker
@@ -130,10 +140,10 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # slack
-sudo snap install --classic slack
+#sudo snap install --classic slack
 
 # spotify
-sudo snap install spotify
+#sudo snap install spotify
 ## OR https://www.spotify.com/mx/download/linux/
 # 1. Add the Spotify repository signing keys to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
@@ -151,10 +161,7 @@ sudo snap install bitwarden
 
 sudo snap install skype --classic
 
-sudo snap install telegram-desktop
 # https://desktop.telegram.org/
-
-sudo snap install firefox
 
 # brave
 sudo apt-get install brave
@@ -196,6 +203,9 @@ sudo apt-get install feh
 # peco (filtering tool)
 sudo apt-get install peco
 
+# fonts
+sudo apt-get install fonts-powerline
+
 # Variety
 # ver https://peterlevi.com/variety/how-to-install/
 # para más instalción y awesomeWM
@@ -221,6 +231,7 @@ sudo apt-get install tmux
 
 # vim
 sudo apt-get install vim vim-gtk vim-addon-manager vim-gui-common
+sudo apt-get install vim-youcompleteme
 
 # Lynx
 sudo apt-get install lynx
@@ -245,3 +256,13 @@ sudo apt-get install rename
 
 # https://wiki.octave.org/Octave_for_Debian_systems
 sudo apt-get install octave
+
+
+
+
+# Copy desktop files
+sudo mv /usr/share/applications/firefox.desktop /usr/share/applications/firefox.desktop.BK
+sudo cp assets/desktop-files/firefox.desktop /usr/share/applications/
+
+sudo cp assets/desktop-files/firefox_icon_by_obinoobie.png /usr/share/icons/
+
