@@ -206,6 +206,9 @@ sudo apt-get install peco
 # fonts
 sudo apt-get install fonts-powerline
 
+sudo apt-get install ttf-mscorefonts-installer
+
+
 # Variety
 # ver https://peterlevi.com/variety/how-to-install/
 # para más instalción y awesomeWM
