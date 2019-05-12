@@ -249,7 +249,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 sudo apt-get install libxt-dev
 sudo apt-get install libcairo2-dev
 
-
+sudo apt-get install mupdf-tools
 
 sudo apt-get install rename
 
