@@ -237,7 +237,8 @@ sudo apt-get install vim-youcompleteme
 sudo apt-get install lynx
 
 
-
+# spacemacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 
 
@@ -265,4 +266,3 @@ sudo mv /usr/share/applications/firefox.desktop /usr/share/applications/firefox.
 sudo cp assets/desktop-files/firefox.desktop /usr/share/applications/
 
 sudo cp assets/desktop-files/firefox_icon_by_obinoobie.png /usr/share/icons/
-

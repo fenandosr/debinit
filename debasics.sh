@@ -1,4 +1,8 @@
 #!/bin/bash
+#:------------------------------------------------------------------------------
+#: Usage: ./debasics.sh
+#: Purpose: My basic debian packages
+#:------------------------------------------------------------------------------
 
 mv /etc/apt/sources.list /etc/apt/sources.list.BK
 cp assets/apt/sources.list /etc/apt/sources.list
@@ -16,6 +20,8 @@ apt-get install firmware-misc-nonfree
 
 apt-get install firmware-iwlwifi
 
+apt-get install ntp
+
 apt-get install net-tools
 
 apt-get install trash-cli
@@ -27,10 +33,13 @@ apt-get install curl wget
 apt-get install xclip xsel
 
 apt-get install vim
+apt-get install vim-gtk
 
 apt-get install git
 
 apt-get install gdebi aptitude
+
+apt-get install konsole
 
 # check which display manager
 # https://unix.stackexchange.com/questions/20370/is-there-a-simple-linux-command-that-will-tell-me-what-my-display-manager-is

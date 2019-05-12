@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Firefox
+Name[es]=Firefox
+Name[fr]=Firefox
+Comment=Browse the World Wide Web
+Comment[es]=Navegue por la web
+Comment[fr]=Navigue sur Internet
+GenericName=Web Browser
+GenericName[es]=Navegador web
+GenericName[fr]=Navigateur Web
+X-GNOME-FullName=Firefox Web Browser
+X-GNOME-FullName[es]=Navegador web Firefox
+X-GNOME-FullName[fr]=Navigateur Web Firefox
+Exec=/home/fer/firefox/firefox %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/icons/firefox_icon_by_obinoobie.png
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Firefox
+StartupNotify=true

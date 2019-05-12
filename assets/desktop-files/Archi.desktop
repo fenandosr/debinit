@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Archi
+Name[es]=Archi
+Comment=ArchiMate Modelling
+Comment[es]=Modelar ArchiMate
+GenericName=Diagram Modelling
+GenericName[es]=Modelador y diagramas
+X-GNOME-FullName=Diagram Modelling
+X-GNOME-FullName[es]=Modelador y diagramas
+Exec=/home/fer/Programs/Archi/Archi
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/icons/Archi.xpm
+Categories=Data Modeling;UML;Diagrams
+StartupWMClass=Archi

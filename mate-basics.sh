@@ -1,15 +1,12 @@
 #!/bin/bash
-
-# los básicos
-#sudo apt-get install mate-desktop mate-desktop-environment mate-desktop-environment-core mate-control-center mate-control-center-common mate-utils mate-utils-common engrampa ffmpegthumbnailer mate-calc mate-applet-brisk-menu mate-applets mate-icon-theme-faenza mate-media mate-notification-daemon mate-power-manager mate-screensaver mate-system-monitor pluma
-
-# los necesarios
-sudo apt-get install dconf-editor mozo
-sudo apt-get install scrot
-#sudo apt-get install compizconfig-settings-manager
-
-# los destacados
-sudo apt-get install mate-desktop-environment-extras mate-desktop-environment-extra caja-eiciel caja-gtkhash caja-image-converter caja-open-terminal caja-admin caja-rename caja-seahorse caja-share mate-dock-applet mate-sensors-applet mate-user-share
+#:------------------------------------------------------------------------------
+#: Usage: ./mkuserhome.sh [-n]
+#: Purpose: useful spare time
+#: Other purpose: Save some time building the same dirs
+#:   (done a lot lately, for an unattainable explication)
+#: Parameters:
+#:   -n    just print the home directory and the commands to be run
+#:------------------------------------------------------------------------------
 
 #xmodmap -pke > ~/.Xmodmap && cat ~/.Xmodmap | sed 's/nobreakspace/space/g' > ~/.Xmodmap
 # ¿Algún día necesitaré eso?
@@ -19,7 +16,7 @@ gsettings set org.mate.peripherals-keyboard delay 350
 gsettings set org.mate.peripherals-keyboard rate 50
 # Disable keyboard sounds
 gsettings set org.mate.Marco.general audible-bell false
-gsettings set org.mate.inzzzzzzterface cursor-blink-time 1200
+gsettings set org.mate.interface cursor-blink-time 1200
 # [comentarios del teclado]
 
 # Mouse
@@ -188,8 +185,6 @@ gsettings set org.mate.session.required-components windowmanager 'marco-compton'
 # Add favorites | https://unix.stackexchange.com/questions/29661/xdg-user-directories
 mkdir "$HOME/Works"
 xdg-user-dirs-update --set WORKS "$HOME/Works"
-mkdir "$HOME/Proj"
-xdg-user-dirs-update --set PROJ "$HOME/Proj"
 mkdir "$HOME/Academy"
 xdg-user-dirs-update --set PROJ "$HOME/Academy"
 echo "file://$(xdg-user-dir DOCUMENTS) $(xdg-user-dir DOCUMENTS | cut -d "/" -f 4)" | tee "$HOME/.gtk-bookmarks"
@@ -198,7 +193,6 @@ echo "file://$(xdg-user-dir MUSIC) $(xdg-user-dir MUSIC | cut -d "/" -f 4)" | te
 echo "file://$(xdg-user-dir PICTURES) $(xdg-user-dir PICTURES | cut -d "/" -f 4)" | tee -a "$HOME/.gtk-bookmarks"
 echo "file://$(xdg-user-dir VIDEOS) $(xdg-user-dir VIDEOS | cut -d "/" -f 4)" | tee -a "$HOME/.gtk-bookmarks"
 echo "file://$(xdg-user-dir WORKS) $(xdg-user-dir WORKS | cut -d "/" -f 4)" | tee -a "$HOME/.gtk-bookmarks"
-echo "file://$(xdg-user-dir PROJ) $(xdg-user-dir PROJ | cut -d "/" -f 4)" | tee -a "$HOME/.gtk-bookmarks"
 echo "file://$(xdg-user-dir ACADEMY) $(xdg-user-dir ACADEMY | cut -d "/" -f 4)" | tee -a "$HOME/.gtk-bookmarks"
 
 # This will give you hardware accelerated window shadows and fading

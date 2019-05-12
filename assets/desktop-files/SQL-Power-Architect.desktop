@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Power Architect
+Name[es]=Power Architect
+GenericName=SQL Power Architect
+GenericName[es]=SQL Power Architect
+X-GNOME-FullName=SQL Power Architect
+X-GNOME-FullName[es]=SQL Power Architect
+Exec=java -jar /home/fer/Programs/architect-1.0.8/architect.jar
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=/usr/share/icons/SQLPowerArch-logo.png
+Categories=Data Modeling
+StartupWMClass=Power Architect
